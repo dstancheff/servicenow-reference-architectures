@@ -1,3 +1,6 @@
+# Incident Management System - Context Diagram
+
+```mermaid
 C4Context
 title Incident Management System - Context Diagram
 
@@ -30,7 +33,7 @@ Rel(SI, BR, "Uses")
 Rel(BR, SI, "Uses")
 Rel(SI, GR, "Consumes")
 Rel(BR, GR, "Consumes")
-
+Rel(BR, GR, "Consumes_MF")
  
 
 
@@ -46,3 +49,4 @@ Rel(Support Group, IM, "Reports incidents", "Uses")
 Rel(IM, CMDB, "Queries and updates incident data")
 Rel(IM, ES, "Integrates with")
 Rel(BR,CMDB,"Reads/Updates")
+```
